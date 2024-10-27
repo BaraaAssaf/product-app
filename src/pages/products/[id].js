@@ -10,7 +10,6 @@ export default function EditProductPage() {
 
     useEffect(() => {
         const fetchProduct = async () => {
-            console.log(id)
             if (id) {
                 const response = await fetchProducts({ id });
                 setProduct(response.data[0]);
